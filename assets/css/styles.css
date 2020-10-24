@@ -121,7 +121,7 @@ img {
   max-width: 1024px;
   display: grid;
   grid-template-columns: 100%;
-  grid-column-gap: 2rem;
+  /* grid-column-gap: 2rem; */
   width: calc(100% - 2rem);
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
@@ -331,7 +331,7 @@ img {
 .work__img {
   position: relative;
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
   overflow: hidden;
 }
 .work__img img {
@@ -339,9 +339,8 @@ img {
   z-index: 0;
   transition: 1s;
   cursor: pointer;
-}
-.work__img img:hover {
-  transform: scale(1.1);
+  width: 100%;
+  height: 100%;
 }
 
 /* ===== CONTACT =====*/
@@ -452,7 +451,7 @@ img {
   .work__container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    column-gap: 2rem;
+    /* column-gap: 2rem; */
   }
   .contact__form {
     width: 360px;
@@ -476,25 +475,51 @@ img {
   position: absolute;
   background: rgba(0, 0, 0, 0);
   z-index: 20;
-  width: 100%;
+  width: 101%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: transparent;
+  /* border-radius: 0.5rem; */
+  /* box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15); */
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.overlay h3 {
+  font-size: 1rem;
 }
 
 .overlay p {
   font-size: 0.8rem;
   text-align: center;
+  padding: 2px;
 }
 
 .overlay-icon {
-  font-size: 3rem;
+  color: #c0c0c0;
+  font-size: 1.5rem;
+}
+
+.overlay-icon:visited {
+  color: inherit;
+  text-decoration: none;
 }
 
 .overlay:hover {
   background: rgba(0, 0, 0, 0.85);
   transition: 0.5s all;
   color: white;
+  z-index: 20;
+  width: 101%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+  padding-left: 3px;
+  padding-right: 3px;
 }

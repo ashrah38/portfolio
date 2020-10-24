@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css styles -->
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <!-- Box icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Hamza Ashraf</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo"></a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="/resume.pdf" class="nav__link">Resume</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+    <!-- end of navbar -->
+
+    <main class="l-main">
+      <!-- Home -->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Hi,<br />I am <span class="home__title-color">Hamza Ashraf</span>
+          </h1>
+        </div>
+
+        <div class="home__social">
+          <a
+            href="https://www.linkedin.com/in/ashrafh4/"
+            target="_blank"
+            class="home__social-icon"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/ashrah38"
+            target="_blank"
+            class="home__social-icon"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="mailto:ashrah4@mcmaster.ca" 
+          target="_blank" 
+          class="home__social-icon"
+          ><i class='bx bx-mail-send'></i></a>
+        </div>
+
+        <div class="home__img">
+          <img src="./assets/img/Hamza.webp" alt="" />
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="./assets/img/about.jpeg" alt="" />
+          </div>
+
+          <div>
+            <h2 class="about__subtitle">Aspiring Engineer, Web Developer.</h2>
+            <p class="about__text">
+              Hi! I am a third year Computer Engineering student at McMaster
+              University with a passion for web development. <br /><br />
+              I am fueled by the prospect of enabling clients to achieve the
+              exact funcionalities they want through creative coding. I pursue
+              the elation which follows when you solve a difficult problem
+              through unique means.
+              <br /><br />
+              In my free time, I love playing cricket, cycling, and hiking
+              through Hamilton's wilderness with my friends!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work -->
+      <section class="work section" id="work">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="work__container bd-grid">
+          <div class="work__img">
+            <!-- new stuff -->
+            <div class="overlay">
+              <h3>Cricket MatchMaker</h3>
+              <p>
+                A web application designed to help users co-ordinate between
+                friends for playing cricket or any sports in general. Users
+                register an account, input their availability and schedule can
+                can add friends. If any of their friends are available to play
+                at the same time, they are notified.
+              </p>
+              <div class="icons">
+                <a href="https://github.com/ashrah38/cricket-matchmaker"
+                  ><i class="bx bxl-github overlay-icon"></i
+                ></a>
+                <a href="http://www.cricketmatchmaker.com"
+                  ><i class="bx bx-link-external overlay-icon"></i
+                ></a>
+              </div>
+            </div>
+            <!-- end of new stuff -->
+            <img src="./assets/img/CMM4.jpg" alt="" />
+          </div>
+          <div class="work__img">
+            <div class="overlay">
+              <h3>LIDAR</h3>
+              <p>
+                Embedded measurement system built using a TI MSP432 uC and ToF
+                sensors to acquire information about the surrounding area.
+                Mapped spatial information is stored and communicated to a
+                personal computer for graphical presentation using the Python
+                Open3D library.
+              </p>
+              <div class="icons">
+                <a
+                  href="https://docs.google.com/document/d/1v_G1lmf6l8V1hV274AkJgQXgl_88Mx7tod-NYQp71GM/edit?usp=sharing"
+                  ><i class="bx bxl-github overlay-icon"></i
+                ></a>
+                <a
+                  href="https://docs.google.com/document/d/1v_G1lmf6l8V1hV274AkJgQXgl_88Mx7tod-NYQp71GM/edit?usp=sharing"
+                  ><i class="bx bx-link-external overlay-icon"></i
+                ></a>
+              </div>
+            </div>
+            <img src="./assets/img/lidar.jpg" alt="" />
+          </div>
+          <div class="work__img">
+            <div class="overlay">
+              <h3>HitchHiker's Guide to SI4</h3>
+              <p>
+                A data structure and algorithm visualizer designed specifically
+                for students to understand algorithms through visualization. The
+                application allows users to input custom arrays and go over
+                single iterations, something that is found regularly in coding
+                questions.
+              </p>
+              <div class="icons">
+                <a href="https://github.com/ashrah38/hitchhikers-guide-to-si4"
+                  ><i class="bx bxl-github overlay-icon"></i
+                ></a>
+                <a href=""><i class="bx bx-link-external overlay-icon"></i></a>
+              </div>
+            </div>
+            <img src="./assets/img/algo-visualizer.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer__title">Hamza</p>
+      <div class="footer__social">
+        <a
+          href="https://www.facebook.com/hamza.ashraf.7902/"
+          target="_blank"
+          class="footer__icon"
+          ><i class="bx bxl-facebook"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/hamza.3899/"
+          class="footer__icon"
+          target="_blank"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+        <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
+      </div>
+      <p>Copyright &copy; 2020, All Rights Reserved</p>
+    </footer>
+    <!-- Javascript -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
